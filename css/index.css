@@ -1,0 +1,523 @@
+body{
+	background-color: #e7e7e7;
+}
+.jd{
+	width: 100%;
+	height: auto;
+}
+/*顶部搜索*/
+.jd_search {
+	position: fixed;
+	width: 100%;
+	height:40px;
+	left: 0;
+	top: 0;
+	background-color: #c91523;
+	z-index:10;
+}
+/*搜索框*/
+.jd_search .search_box{
+	width: 100%;
+	height: 100%;
+	padding-left: 75px;
+	padding-right: 50px;
+	box-sizing: border-box;
+	position: relative;
+}
+.jd_search .search_box input{
+	width: 100%;
+	height:30px;
+	font-size: 14px;
+	margin-top: 5px;
+	border-radius: 3px;
+	padding-left: 25px;
+	box-sizing: border-box;
+}
+/*放大镜*/
+.jd_search .search_box i{
+	position: absolute;
+	left:80px;
+	top:10px;
+	width: 20px;
+	height: 20px;
+	margin-right: 5px;
+	color:#fff;
+	font-size: 20px;
+	background: url("../images/jd-sprites.png") -60px -109px;
+	/*缩放精灵图？？？*/
+	background-size: 200px 200px;
+}
+/*logo*/
+.jd_search .logo {
+	position: absolute;
+	left: 5px;
+	top: 8px;
+	display: block;
+	width: 56px;
+	height: 21px;
+	background: url("../images/jd-sprites.png") no-repeat ;
+
+	background-position: 0 -109px;
+	background-size: 200px 200px;
+}
+/*登录按钮*/
+.jd_search .login{
+	position: absolute;
+	top:10px;
+	right:0;
+	display: block;
+	width: 50px;
+	height: 40px;
+	font-size:16px;
+	text-align: center;	
+	color:#fff;
+
+}
+/*1.轮播图*/
+.jd_content {
+	width: 100%;
+}
+.jd_content .carousel li{
+	width: 100%;
+	height:auto;
+}
+.jd_content .carousel a{
+	display: block;
+	width: 100%;
+	
+} 
+.jd_content .carousel li img{
+	width: 100%;
+	vertical-align: middle;
+}
+
+/*2.页面导航*/
+.jd_content .nav ul{
+	width: 100%;
+	overflow: hidden;
+	background-color: #fff;
+	padding-top: 10px;
+	box-sizing: border-box;
+	/*font-size解决display:inline-block不能同行显示的问题*/
+	font-size: 0;
+}
+.jd_content .nav li{
+	width:25%;
+	display: inline-block;
+	vertical-align: middle;
+	text-align: center;
+}
+.jd_content .nav  a{
+	display: block;
+	width: 100%;
+	padding-bottom:10px;
+}
+.jd_content .nav li img{
+	width: 40px;
+	height: 45px;
+}
+.jd_content .nav li strong{
+	display: block;
+	font-weight: normal;
+	font-size: 12px;
+	margin-top: 5px;
+}
+
+/*秒杀部分*/
+/*秒杀标题*/
+.jd_content  .seckill{
+	width: 100%;
+	margin-top: 5px;
+	padding:0 6px;
+	box-sizing: border-box;
+	background-color: #fff;
+	position: relative;
+}
+.jd_content  .seckill_title{
+	width: 100%;
+	height:40px;
+	overflow: hidden;
+}
+.jd_content  .seckill_title h2::before{
+	content:"";
+	display: block;
+	float: left;
+	width: 20px;
+	height: 26px;
+	margin-top: 5px;
+	background: url("../images/jd-sprites.png") -84px -107px;
+	background-size: 200px 200px;
+}
+.jd_content  .seckill_title h2{
+	float: left;
+	font-size: 16px;
+	line-height: 40px;
+	color:#c91523;
+	margin-left: 24px;
+	margin-right: 10px;
+}
+.jd_content  .seckill_title .more{
+	display: block;
+	width: 55px;
+	height: 40px;
+	line-height: 23px;
+	float: right;
+
+}
+/*秒杀时间显示*/
+.jd_content .seckill_time{
+	margin-top: 10px;
+}
+.jd_content .seckill_time span{
+	display:block;
+	float: left;
+	padding-top: 3px;
+	background-color:rgba(0,0,0,.9);
+	color:#fff;
+}
+.jd_content .seckill_time span:nth-child(3n+1){
+	border-top-left-radius: 3px;
+	border-bottom-left-radius: 3px;
+	padding-left: 2px;
+}
+.jd_content .seckill_time span:nth-child(3n){
+	background-color: transparent;
+	color:#000;
+	margin: 0 2px;
+	font-size: 12px;
+}
+.jd_content .seckill_time span:nth-child(3n+2){
+	border-top-right-radius: 3px;
+	border-bottom-right-radius: 3px;
+	padding-right: 2px;
+}
+
+
+/*秒杀内容*/
+.jd_content .seckill_content{
+	width: 100%;
+}
+.jd_content .seckill_content ul{
+	width: 100%;
+	font-size: 0;
+}
+.jd_content .seckill_content ul li {
+	display: inline-block;
+	width: 33.33333%;
+	vertical-align: middle;
+	padding:0 10px;
+	box-sizing: border-box;
+	/*position: relative;*/
+	text-align: center;
+
+}
+.jd_content .seckill_content li a{
+	display: block;
+	width: 100%;
+	position: relative;
+}
+.jd_content .seckill_content li img{
+	width: 100%;
+	height:auto;
+}
+.jd_content .seckill_content li i{
+	position: absolute;
+	right: 0;
+	bottom: 0;
+	display: block;
+	width: 34px;
+	height: 26px;
+	line-height: 26px;
+	border-radius: 50%;
+	color:#fff;
+	font-size: 14px;
+	padding-left: 2px;
+	box-sizing: border-box;
+	vertical-align: middle;
+	background-color: orange;
+}
+.jd_content  li span{
+	display: block;
+	font-size: 14px;
+	color:#ed5657;
+}
+.jd_content  li del{
+	display: block;
+	font-size: 12px;
+	color: #ccc;
+}
+
+/*主会场*/
+.jd_content .meeting {
+	width: 100%;
+	position: relative;
+}
+.jd_content .meeting img{
+	width: 100%;
+	vertical-align: middle;
+}
+/*主会场*/
+.jd_content .meeting ul{
+	position: absolute;
+	left: 0;
+	bottom:0;
+	width: 100%;
+	padding: 0 8px 8px;
+	box-sizing: border-box;
+	overflow: hidden;
+}
+.jd_content .meeting  li{
+	width: 50%;
+	float: left;	
+}
+/*热卖列表*/
+.jd_content .hot_sale{
+	width: 100%;
+}
+.jd_content .hot_sale ul {
+	width: 100%;
+}
+.jd_content .hot_sale li {
+	width: 100%;
+	overflow: hidden;
+}
+.jd_content .hot_sale li:first-child a{
+	display: block;
+	float: left;
+	width: 33.33333%;
+}
+.jd_content .hot_sale li:first-child img{
+	width: 100%;
+	vertical-align: middle;
+}
+.jd_content .hot_sale li:nth-child(2) a{
+	display: block;
+	float: left;
+	width: 50%;
+}
+.jd_content .hot_sale li:nth-child(2) img{
+	width: 100%;
+	vertical-align: middle;
+}
+
+/*6.广告-生活旅行*/
+.jd_content .sup_market{
+	width: 100%;
+	background-color: #fff;
+} 
+.jd_content .sup_market img{
+	width: 100%;
+	vertical-align: middle;
+}
+.jd_content .sup_market h3{
+	height:40px;
+	line-height: 40px;
+	color:#c91523;
+	font-size: 18px;
+	padding-left: 10px;
+}
+.jd_content .sup_market ul {
+	width: 100%;
+}
+.jd_content .sup_market li{
+	width: 100%;
+	overflow: hidden;
+}
+.jd_content .sup_market li:first-child a{
+	display: block;
+	width: 50%;
+	float: left;
+}
+.jd_content .sup_market li:first-child img{
+	width: 100%;
+	vertical-align: middle;
+}
+
+.jd_content .sup_market li:nth-child(2) a{
+	display: block;
+	width: 50%;
+	float: left;
+}
+.jd_content .sup_market li:nth-child(2) img{
+	width: 100%;
+	vertical-align: middle;
+}
+.jd_content .sup_market li:nth-child(3) img{
+	width: 100%;
+	vertical-align: middle;
+} 
+
+/*7.主题街*/
+.jd_content .them{
+	width: 100%;
+	background-color: #fff;
+}
+.jd_content .them h3{
+	height:40px;
+	line-height: 40px;
+	color:#c91523;
+	font-size: 18px;
+	padding-left: 10px;
+}
+.jd_content .them ul {
+	width: 100%;
+	overflow: hidden;
+}
+.jd_content .them li{
+	width: 50%;
+	overflow: hidden;
+	float: left;
+}
+.jd_content .them li:first-child img,
+.jd_content .them li:nth-child(2) img{
+	width: 100%;
+	vertical-align: middle;
+}
+.jd_content .them li:nth-child(3) a{
+	display: block;
+	float: left;
+	width: 50%;
+}
+
+.jd_content .them li:nth-child(3) img{
+	width: 100%;
+}
+.jd_content .them li:nth-child(4){
+	width: 100%;
+}
+.jd_content .them li:nth-child(4) a{
+	display: block;
+	float: left;
+	width: 25%;
+}
+.jd_content .them li:nth-child(4) img{
+	width: 100%;
+}
+.jd_content .them li:nth-child(5) {
+	width: 100%;
+	padding:10px;
+	box-sizing: border-box;
+}
+.jd_content .them li:nth-child(5) img{
+	width: 100%;
+	vertical-align: middle;
+}
+
+/*7.品牌推荐*/
+.jd_content .brand_rec h3{
+	height:40px;
+	line-height: 40px;
+	color:#c91523;
+	font-size: 18px;
+	padding-left: 10px;
+}
+.jd_content .brand_rec{
+	background: #fff;
+	width: 100%;
+}
+.jd_content .brand_rec li {
+	width: 100%;
+}
+.jd_content .brand_rec li  a:first-child{
+	display: block;
+	float: left;
+	width: 40%;
+}
+.jd_content .brand_rec li  a:nth-child(2),
+.jd_content .brand_rec li  a:nth-child(3)
+{
+	display: block;
+	float: left;
+	width: 30%;
+}
+.jd_content .brand_rec li  img{
+	width: 100%;
+}
+
+
+.jd_content  .adv7{
+	width: 100%;
+	padding:10px;
+	box-sizing: border-box;
+	overflow: hidden;
+}
+.jd_content  .adv7 img{
+	width: 100%;
+	vertical-align: middle;
+}
+
+/*8.广告-猜你喜欢*/
+.jd_content .guess{
+	width: 100%;
+	background: #fff;
+}
+.jd_content .guess_title{
+	height:40px;
+}
+.jd_content .guess_title h3{
+	float: left;
+	height:40px;
+	line-height: 40px;
+	font-size: 14px;
+	color:#7F7F7F;
+	padding-left: 10px;
+	box-sizing: border-box;
+}
+.jd_content .guess_title a{
+	display: block;
+	float: right;
+	color:#f15353;
+	height:40px;
+	line-height: 40px;
+	padding-right: 10px;
+	box-sizing: border-box;
+	padding-left: 25px;
+	position: relative;
+}
+.jd_content .guess_title a::before{
+	content:"";
+	display: block;
+	float: left;
+	width: 18px;
+	height: 18px;
+	position: absolute;
+	top:10px;
+	left:0;
+	background: url("../images/icon-login.png") no-repeat;
+	background-size: 18px 18px;
+}
+
+/*8.猜你喜欢内容区域*/
+.jd_content .guess_content ul{
+	width: 100%;
+	background: #fff;
+	/*overflow: hidden;*/
+}
+.jd_content .guess_content li{
+	float: left;
+	width: 50%;
+	padding: 10px 10px;
+	box-sizing: border-box;
+	text-align: left;
+}
+.jd_content .guess_content a{
+	display: block;
+	width: 100%;
+} 
+.jd_content .guess_content img{
+	width: 100%;
+	vertical-align: middle;
+}
+.jd_content .guess_content p{
+	margin:10px 0;
+}
+.jd_content .guess_content .line{
+	width: 100%;
+	height:1px;
+	background-color: #ccc;
+	margin-bottom: 8px;
+}
+.jd_content .guess_content span{
+	display: block;
+	float: left;
+}
